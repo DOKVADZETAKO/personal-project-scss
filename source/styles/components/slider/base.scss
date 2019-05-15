@@ -1,11 +1,76 @@
 @import '../../palete.scss';
+@import '../../fonts.scss';
 
 .slider {
     width: 100%;
-    background-color: $bc-color-slider;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .bg-image {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .prev {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+    }
+
+    .next {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+    }
 
     .content {
-        width: 1188px;
-        margin: auto;
+        position: absolute;
+        max-width: 1188px;
+        text-align: center;
+
+        h2 {
+            padding-bottom: 23px;
+            color: $color-slider-1;
+            font-family: $Raleway;
+            font-size: 62px;
+            font-weight: 200;
+            line-height: 74.4px;
+        }
+
+        h1 {
+            padding-bottom: 25px;
+            color: $color-slider-1;
+            font-family: $Montserrat;
+            font-size: 74px;
+            font-weight: 700;
+            line-height: 88.8px;
+        }
+
+        p {
+            padding-bottom: 40px;
+            color: $color-slider-1;
+            font-family: $Raleway;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 0 30px;
+            border: 1px solid $color-slider-1;
+            outline: 3px solid $color-slider-2;
+            background-color: $color-slider-2;
+            color: $color-slider-1;
+            font-family: $Raleway;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 44px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
     }
 }

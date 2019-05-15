@@ -1,3 +1,100 @@
-.header {
-    background: green;
+@import 'palete';
+@import 'fonts';
+
+.about-us {
+    width: 768px;
+    height: auto;
+
+    .content {
+        display: inherit;
+
+        .pc {
+            display: block;
+            margin: auto;
+            margin-bottom: 50px;
+            padding-right: 0;
+        }
+
+        .info {
+            padding-left: 25px;
+
+            h4 {
+                border-bottom: 1px solid $color-before;
+                margin-bottom: 20px;
+            }
+
+            .mainbox {
+                grid-template-columns: 100%;
+                grid-template-rows: 90px 90px 90px 90px;
+
+                .box {
+                    margin-right: 0;
+
+                    div {
+                        float: left;
+                        width: 100%;
+
+                        h5{
+                            display: none;
+                        }
+
+                        p {
+                            span {
+                                display: inline;
+                            }
+                        }
+
+                        &::before {
+                            content: url("../../../images/about-us/Check-Icon.png");
+                        }
+                    }
+
+                    &.two {
+
+                        div {
+
+                            &::before {
+                                content: url("../../../images/about-us/Check-Icon.png");
+                            }
+                        }
+                    }
+
+                    &.three {
+
+                        div {
+
+                            &::before {
+                                content: url("../../../images/about-us/Check-Icon.png");
+                            }
+                        }
+                    }
+
+                    &.four {
+
+                        div {
+
+                            a {
+                                display: inline-block;
+                                padding: 0 30px;
+                                background-color: $color-slider-2;
+                                color: $color-slider-1;
+                                font-family: $Raleway;
+                                font-size: 13px;
+                                font-weight: 600;
+                                line-height: 44px;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                            }
+
+                            &::before, p {
+                              display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
 }

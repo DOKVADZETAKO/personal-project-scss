@@ -1,0 +1,17 @@
+@import '../../palete.scss';
+
+header {
+    width: 100%;
+
+    .header {
+        width: 280px;
+
+        nav {
+            display: none;
+        }
+
+        .menubutton {
+            display: block;
+        }
+    }
+}

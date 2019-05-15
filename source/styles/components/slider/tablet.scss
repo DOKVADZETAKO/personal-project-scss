@@ -1,3 +1,29 @@
-.header {
-    background: green;
+.slider {
+ 
+
+    .bg-image {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .prev, .next {
+       display: none;
+    }
+
+    .content {
+        width: 768px;
+
+        h2 {
+            padding-bottom: 15px;
+        }
+
+        h1 {
+            padding-bottom: 15px;
+        }
+
+        p {
+            padding-bottom: 15px;
+        }
+    }
 }
