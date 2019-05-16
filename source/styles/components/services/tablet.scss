@@ -1,0 +1,24 @@
+@import '../../palete.scss';
+
+.mainservices {
+
+    .services {
+        max-width: 768px;
+
+        .title {
+            padding-bottom: 60px;
+        }
+
+        .mainitem {
+            display: flex;
+            flex-direction: column;
+
+            .item {
+
+                p {
+                    padding-bottom: 50px;
+                }
+            }
+        }
+    }
+}

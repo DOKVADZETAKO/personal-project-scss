@@ -1,0 +1,78 @@
+@import '../../palete.scss';
+
+.portfolio {
+
+    .title {
+        margin-bottom: 70px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 163px 163px 163px 163px;
+        grid-gap: 20px;
+
+        .item {
+
+             &:hover {
+
+                .hover {
+
+                    .icons {
+                        display: none;
+                    }
+
+                    .icons-mobile {
+                        height: 60%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $bc-color-slider;
+
+                        img {
+                            margin-right: 10px;
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+
+                    .text {
+                        height: 40%;
+
+                        h4 {
+                            font-size: 13.99px;
+                            line-height: 26.96px;
+                        }
+
+                        p {
+                            font-size: 9.99px;
+                            line-height: 21.96px;
+                        }
+                    }
+                }
+
+            }
+
+            &.item-1 {
+                grid-column: 1/2;
+            }
+
+            &.item-2 {
+                grid-column: 1/2;
+            }
+
+            &.item-3 {
+                grid-column: 1/2;
+            }
+
+            &.item-4 {
+                grid-column: 1/2;
+            }
+
+            &.item-7, &.item-5, &.item-6 {
+                display: none;
+            }    
+         }
+    }
+}

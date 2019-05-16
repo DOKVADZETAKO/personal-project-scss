@@ -1,5 +1,14 @@
 @import 'reset';
+
+* {
+    box-sizing: border-box;
+}
+
 @import 'media-queries';
 @import 'components/header/index.scss';
 @import 'components/slider/index.scss';
 @import 'components/about-us/index.scss';
+@import 'components/services/index.scss';
+@import 'components/portfolio/index.scss';
+@import 'components/contact/index.scss';
+@import 'components/footer/index.scss';

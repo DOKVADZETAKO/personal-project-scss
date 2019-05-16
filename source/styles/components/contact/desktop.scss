@@ -1,0 +1,21 @@
+.maincontact {
+
+    .contact {
+        width: 100%;
+
+        .addres {
+            margin: 0 10px;
+        }
+
+        .mail {
+            margin: 10px;
+
+            input {
+
+                &.short {
+                    margin-left: 18px;
+                }
+            }
+        }
+    }
+}

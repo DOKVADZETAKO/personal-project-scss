@@ -1,0 +1,28 @@
+@import '../../palete.scss';
+
+.maincontact{
+    width: 100%;
+    overflow: hidden;
+
+    .contact {
+        width: 280px;
+
+        .addres{
+            margin: 0 10px;
+            flex-direction: column;
+        }
+
+        .mail {
+            margin: 0 10px;
+
+            input {
+
+                &.short {
+                    margin-left: 0;
+                    width: 100%;
+                    
+                }
+            }
+        }
+    }
+}
