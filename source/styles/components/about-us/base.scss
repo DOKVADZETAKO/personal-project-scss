@@ -17,23 +17,21 @@
         position: relative;
         margin-bottom: 50px;
 
-        img {
-            position: absolute;
-            top: 30px;
-            background: $color-1;
-        }
-
         h3 {
             font-family: $Raleway;
             font-weight: 600;
             font-size: 31px;
             line-height: 34px;
-            color: $color-text;
+            color: $color-6;
             position: relative;
 
             span {
                 color: $color-2;
             }
+
+        }
+
+        .speak {
 
             &::after {
                 content: '';
@@ -44,7 +42,18 @@
                 margin: auto;
                 margin-top: 5px;
             }
+                
+             &::before {
+                content: url("/images/about-us/Speak Icon.png");
+                position: absolute;
+                top: 21px;
+                background: #FFFFFF;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                padding: 0 7px;
+            }
         }
+
     }
 
     .content {

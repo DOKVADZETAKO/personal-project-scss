@@ -1,23 +1,20 @@
 @import 'palete.scss';
 @import 'fonts.scss';
 
-.maincontact{
+.maincontact {
     width: 100%;
     overflow: hidden;
 
     .contact {
         width: 1188px;
         margin: auto;
+        margin-bottom: 50px;
 
         .title {
             text-align: center;
             margin-bottom: 100px;
             position: relative;
 
-            img {
-                position: absolute;
-                top: 30px;
-            }
 
             h3 {
                 font-family: $Raleway;
@@ -26,6 +23,9 @@
                 line-height: 34px;
                 color: $color-4;
                 margin-top: 50px;
+            }
+            
+            .phone {
 
                 &::after {
                     content: '';
@@ -36,7 +36,17 @@
                     margin: auto;
                     margin-top: 5px;
                 }
-            }   
+                    
+                 &::before {
+                    content: url("/images/contact/Phone.png");
+                    position: absolute;
+                    top: 21px;
+                    background: $color-1;
+                    left: 50%;
+                    transform: translate(-50%, 50%);
+                    padding: 0 7px;
+                }
+            }
         }
 
         .addres {
@@ -47,13 +57,25 @@
                 text-align: center;
                 margin-bottom: 50px;
 
-                img {
-                    margin-bottom: 20px;
-                    display: block;
-                    margin: auto;
-                    margin-bottom: 30px;
-                    width: 26px;
-                    height: 34px;
+                div {
+                    
+                    &:before {
+                        content: url("/images/contact/Location.png");
+                        
+                    }
+                    &.email {
+
+                        &:before {
+                            content: url("/images/contact/Email.png");
+                        }
+                    }
+
+                    &.support {
+
+                        &:before {
+                            content: url("/images/contact/Support.png");
+                        }
+                    }
                 }
 
                 p {
@@ -62,7 +84,6 @@
                     font-weight: 400;
                     font-size: 15px;
                     line-height: 24px;
-
                 }
             }
         }
