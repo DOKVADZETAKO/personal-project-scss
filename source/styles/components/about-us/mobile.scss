@@ -21,8 +21,7 @@
       //      padding-left: 25px;
 
             h4 {
-                border-bottom: 1px solid $color-before;
-                margin-bottom: 12px;
+                border-bottom: 1px solid $color-3;
                 font-size: 16px;
                 line-height: 19px;
                 padding-bottom: 18px;
@@ -50,7 +49,7 @@
                         }
 
                         &::before {
-                            content: url("../../../images/about-us/Check-Icon.png");
+                            content: url("/images/about-us/Check-Icon.png");
                         }
                     }
 
@@ -59,7 +58,7 @@
                         div {
 
                             &::before {
-                                content: url("../../../images/about-us/Check-Icon.png");
+                                content: url("/images/about-us/Check-Icon.png");
                             }
                         }
                     }
@@ -69,7 +68,7 @@
                         div {
 
                             &::before {
-                                content: url("../../../images/about-us/Check-Icon.png");
+                                content: url("/images/about-us/Check-Icon.png");
                             }
                         }
                     }
@@ -81,8 +80,8 @@
                             a {
                                 display: inline-block;
                                 padding: 0 30px;
-                                background-color: $color-slider-2;
-                                color: $color-slider-1;
+                                background-color: $color-2;
+                                color: $color-1;
                                 font-family: $Raleway;
                                 font-size: 13px;
                                 font-weight: 600;

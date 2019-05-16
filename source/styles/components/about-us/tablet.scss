@@ -9,11 +9,25 @@
         display: inherit;
 
         .pc {
-            display: block;
+            //  position: relative;
+            width: 718px;
+            height: 421px;
             margin: auto;
             margin-bottom: 50px;
-            padding-right: 0;
-        }
+
+               img {
+                //  position: absolute;
+                  width: 100%;
+
+                &.patern {
+                    display: block;
+
+                }
+                &.comp {
+                    display: none;
+                }
+               }
+           }
 
         .info {
             margin: 0 25px;
@@ -45,7 +59,7 @@
                         }
 
                         &::before {
-                            content: url("../../../images/about-us/Check-Icon.png");
+                            content: url("/images/about-us/Check-Icon.png");
                         }
                     }
 
@@ -54,7 +68,7 @@
                         div {
 
                             &::before {
-                                content: url("../../../images/about-us/Check-Icon.png");
+                                content: url("./images/about-us/Check-Icon.png");
                             }
                         }
                     }
@@ -64,7 +78,7 @@
                         div {
 
                             &::before {
-                                content: url("../../../images/about-us/Check-Icon.png");
+                                content: url("/images/about-us/Check-Icon.png");
                             }
                         }
                     }

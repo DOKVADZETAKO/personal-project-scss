@@ -1,4 +1,4 @@
-@import '../../palete.scss';
+@import 'palete.scss';
 
 .portfolio {
 
@@ -26,7 +26,7 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background-color: $bc-color-slider;
+                        background-color: $color-6;
 
                         img {
                             margin-right: 10px;

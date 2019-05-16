@@ -1,26 +1,26 @@
-@import '../../palete.scss';
-@import '../../fonts.scss';
+@import '../styles/palete.scss';
+@import '../styles/fonts.scss';
 
-.mainaboutus{
+.mainaboutus {
     width: 100%;
     overflow: hidden;
+    margin-top: 50px;
 }
 
 .about-us {
     width: 1188px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     margin: auto;
 
     .title {
         text-align: center;
         position: relative;
-        padding-bottom: 50px;
+        margin-bottom: 50px;
 
-        img{
+        img {
             position: absolute;
             top: 30px;
-            background: $color-header;
+            background: $color-1;
         }
 
         h3 {
@@ -32,7 +32,7 @@
             position: relative;
 
             span {
-                color: $color-slider-2;
+                color: $color-2;
             }
 
             &::after {
@@ -40,7 +40,7 @@
                 display: block;
                 height: 2px;
                 width: 100px;
-                background-color: $color-before;
+                background-color: $color-3;
                 margin: auto;
                 margin-top: 5px;
             }
@@ -49,10 +49,28 @@
 
     .content {
         display: flex;
+        width: 100%;
+        margin-bottom: 50px;
 
         .pc {
-            margin-right: 95px;
-        }
+             //  position: relative;
+                width: 1188px;
+                height: 414px;
+                display: flex;
+                overflow: hidden;
+                justify-content: center;
+                align-items: center;
+                margin-right: 95px;
+        
+                img{
+                 //  position: absolute;
+                   width: 100%;
+
+                &.patern{
+                    display: none;
+                }
+                }
+            }
 
         .info {
 
@@ -61,8 +79,8 @@
                 font-weight: 400;
                 font-size: 31px;
                 line-height: 19px;
-                color: $color-text;
-                padding-bottom: 40px;
+                color: $color-4;
+                margin-bottom: 40px;
             }
 
             p {
@@ -70,8 +88,8 @@
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 27px;
-                color: $color-text-p;
-                padding-bottom: 40px;
+                color: $color-5;
+                margin-bottom: 40px;
 
                 span{
                     display: none;
@@ -82,19 +100,14 @@
                 display: grid;
                 grid-template-columns: 275px 275px;
                 grid-template-rows: 90px 90px;
+                grid-gap: 17px;
 
                 .box {
-                    margin-right: 17px;
-
-                    &:nth-child(even){
-                        margin-right: 0;
-                    }
 
                     div {
-                        float: right;
 
                         &::before {
-                            content: url("../../../images/about-us/FEATURES\ ONE.png");
+                            content: url("/images/about-us/FEATURES\ ONE.png");
                             float: left;
                             margin-right: 10px;
 
@@ -105,7 +118,7 @@
                             font-weight: 700;
                             font-size: 18px;
                             line-height: 19px;
-                            color: $color-text;
+                            color: $color-4;
                         }
                     }
 
@@ -114,7 +127,7 @@
                         div {
 
                             &::before {
-                                content: url("../../../images/about-us/FEATURES\ TWO.png");
+                                content: url("/images/about-us/FEATURES\ TWO.png");
                             }
                         }
                     }
@@ -124,7 +137,7 @@
                         div {
 
                             &::before {
-                                content: url("../../../images/about-us/FEATURES\ THREE.png");
+                                content: url("/images/about-us/FEATURES\ THREE.png");
                             }
                         }
                     }
@@ -137,7 +150,7 @@
                             }
 
                             &::before {
-                                content: url("../../../images/about-us/FEATURES\ FOUR.png");
+                                content: url("/images/about-us/FEATURES\ FOUR.png");
                             }
                         }
                     }

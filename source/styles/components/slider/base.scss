@@ -12,18 +12,34 @@
         position: relative;
         width: 100%;
         height: auto;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+
+        img{
+         //   position: absolute;
+        }
     }
 
     .prev {
         position: absolute;
         top: 50%;
         left: 5%;
+
+        &::before {
+            content: url("/images/slider/prev.png")
+        }
     }
 
     .next {
         position: absolute;
         top: 50%;
         right: 5%;
+
+        &::before {
+            content: url("/images/slider/next.png")
+        }
     }
 
     .content {
@@ -32,8 +48,8 @@
         text-align: center;
 
         h2 {
-            padding-bottom: 23px;
-            color: $color-slider-1;
+            margin-bottom: 23px;
+            color: $color-1;
             font-family: $Raleway;
             font-size: 62px;
             font-weight: 200;
@@ -41,8 +57,8 @@
         }
 
         h1 {
-            padding-bottom: 25px;
-            color: $color-slider-1;
+            margin-bottom: 25px;
+            color: $color-1;
             font-family: $Montserrat;
             font-size: 74px;
             font-weight: 700;
@@ -50,8 +66,8 @@
         }
 
         p {
-            padding-bottom: 40px;
-            color: $color-slider-1;
+            margin-bottom: 40px;
+            color: $color-1;
             font-family: $Raleway;
             font-size: 20px;
             font-weight: 300;
@@ -61,10 +77,10 @@
         a {
             display: inline-block;
             padding: 0 30px;
-            border: 1px solid $color-slider-1;
-            outline: 3px solid $color-slider-2;
-            background-color: $color-slider-2;
-            color: $color-slider-1;
+            border: 1px solid $color-1;
+            outline: 3px solid $color-2;
+            background-color: $color-2;
+            color: $color-1;
             font-family: $Raleway;
             font-size: 13px;
             font-weight: 600;

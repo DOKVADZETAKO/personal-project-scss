@@ -1,9 +1,9 @@
-@import '../../palete.scss';
-@import '../../fonts.scss';
+@import 'palete.scss';
+@import 'fonts.scss';
 
 .mainservices {
     width: 100%;
-    background-color: $bc-color-header;
+    background-color: $bc-color;
     display: flex;
     justify-content: center;
 
@@ -14,7 +14,7 @@
 
         .title {
             text-align: center;
-            padding-bottom: 150px;
+            margin-bottom: 150px;
             position: relative;
 
             img {
@@ -27,108 +27,106 @@
                 font-weight: 600;
                 font-size: 31px;
                 line-height: 34px;
-                color: $color-slider-1;
+                color: $color-1;
 
                 &::after {
                     content: '';
                     display: block;
                     height: 2px;
                     width: 100px;
-                    background-color: $color-before;
+                    background-color: $color-3;
                     margin: auto;
                     margin-top: 5px;
                 }
             }
-            
         }
 
-/*
-        .item{
-
-            .hexagon{
-                width: 140px;
-                height: 90px;
-                border: 2px solid red;
-                position: relative;
-                margin: 30px auto;
-
-                &::before{
-                    content: '';
-                    width: 0;
-                    height: 0;
-                    position: absolute;
-                    top: -45px;
-                    left: 0;
-                    border-left: 70px solid transparent;
-                    border-right: 70px solid transparent;
-                    border-bottom: 45px solid red;
-
-                }
-
-                &::after{
-                    content: '';
-                    width: 0;
-                    height: 0;
-                    position: absolute;
-                    bottom: -45px;
-                    left: 0;
-                    border-left: 70px solid transparent;
-                    border-right: 70px solid transparent;
-                    border-top: 45px solid red;
-
-                }
-            }
-        }
-    }
-
-*/
         .mainitem {
             display: flex;
-            padding-bottom: 50px;
+            margin-bottom: 150px;
 
-            .item {
+            .item { 
 
-                div {
+                &.one {
 
-                    &::before {
-                        content: url("../../../images/services/Group\ 1.png");
-                    }
-                }
-                
-                &.two{
                     div {
 
                         &::before {
-                            content: url("../../../images/services/Group\ 2.png");
+                            content: url("/images/services/Group\ 1.png");
                         }
                     }
                 }
 
-                &.three{
+                &.two {
+
                     div {
 
                         &::before {
-                            content: url("../../../images/services/Group\ 3.png");
+                            content: url("/images/services/Group\ 2.png");
                         }
                     }
                 }
-                h3{
+
+                &.three {
+
+                    div {
+
+                        &::before {
+                            content: url("/images/services/Group\ 3.png");
+                        }
+                    }
+                }
+
+                h3 {
                     font-family: $Raleway;
                     font-weight: 600;
                     font-size: 20px;
                     line-height: 40px;
-                    color: $color-slider-2;
+                    color: $color-2;
                     text-transform: uppercase;
-                    padding-bottom: 30px;
+                    margin-bottom: 30px;
                     padding-top: 30px;
                 }
 
-                p{
+                p {
                     font-family: $Raleway;
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 22px;
-                    color: $color-slider-1;
+                    color: $color-1
+                }
+
+                &:hover{
+
+                    &.one {
+
+                        div {
+    
+                            &::before {
+                                content: url("/images/services/hover-1.png");
+                            }
+                        }
+                    }
+    
+                    &.two {
+    
+                        div {
+    
+                            &::before {
+                                content: url("/images/services/hover-1.png");
+                            }
+                        }
+                    }
+    
+                    &.three {
+    
+                        div {
+    
+                            &::before {
+                                content: url("/images/services/hover-1.png");
+                            }
+                        }
+                    }
                 }
             }
         }
