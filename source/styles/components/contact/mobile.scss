@@ -4,9 +4,13 @@
 
     .contact {
         width: 280px;
+        padding: 0;
 
         .title{
             margin-bottom: 50px;
+           h3{
+               margin-left: 0;
+           }
         }
 
         .addres{

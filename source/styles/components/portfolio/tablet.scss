@@ -1,40 +1,45 @@
 .portfolio {
 
-    .title{
+    .title {
         margin-bottom: 100px;
+        h3{
+            margin-left: 0;
+        }
     }
 
     .content {
+        grid-gap: 30px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 229px 229px;
-        grid-gap: 30px;
 
         .item {
 
-            &:hover {
+            .image {
 
-                .hover {
-                    .icons{
-                        height: 70%;
-                    }
+                &:hover {
 
-                    .text {
-                        height: 30%;
+                    .hover {
 
-                        h4 {
-                            font-size: 11.99px;
-                            line-height: 21.96px;
+                        .icons {
+                            height: 70%;
                         }
 
-                        p {
-                            font-size: 9.99px;
-                            line-height: 21.96px;
+                        .text {
+                            height: 30%;
+
+                            h4 {
+                                font-size: 11.99px;
+                                line-height: 21.96px;
+                            }
+
+                            p {
+                                font-size: 9.99px;
+                                line-height: 21.96px;
+                            }
                         }
                     }
                 }
             }
-
-            
 
             &.item-1 {
                 grid-column: 1/2;

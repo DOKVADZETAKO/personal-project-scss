@@ -14,7 +14,7 @@
 
         .title {
             text-align: center;
-            margin-bottom: 161px;
+            margin-bottom: 152px;
             position: relative;
 
             h3 {
@@ -23,6 +23,8 @@
                 font-size: 31px;
                 line-height: 34px;
                 color: $color-1;
+                margin-left: 21px;
+                margin-bottom: 16px;
             }
 
             .setting {
@@ -31,7 +33,7 @@
                     content: '';
                     display: block;
                     height: 2px;
-                    width: 100px;
+                    width: 122px;
                     background-color: $color-3;
                     margin: auto;
                     margin-top: 5px;
@@ -39,19 +41,18 @@
                     
                  &::before {
                     content: url("/images/services/setting.png");
+                    padding: 0 7px;
                     position: absolute;
-                    top: 21px;
-                    background: $bc-color;
+                    top: 30px;
                     left: 50%;
                     transform: translate(-50%, 50%);
-                    padding: 0 7px;
+                    background: $bc-color;
                 }
             }
         }
 
         .mainitem {
             display: flex;
-            margin-bottom: 150px;
             margin-bottom: 126px;
 
             .item { 
@@ -61,7 +62,7 @@
                     div {
 
                         &::before {
-                            content: url("/images/services/Group\ 1.png");
+                            content: url("/images/services/group-1.png");
                         }
                     }
                 }
@@ -71,7 +72,7 @@
                     div {
 
                         &::before {
-                            content: url("/images/services/Group\ 2.png");
+                            content: url("/images/services/group-2.png");
                         }
                     }
                 }
@@ -81,7 +82,7 @@
                     div {
 
                         &::before {
-                            content: url("/images/services/Group\ 3.png");
+                            content: url("/images/services/group-3.png");
                         }
                     }
                 }

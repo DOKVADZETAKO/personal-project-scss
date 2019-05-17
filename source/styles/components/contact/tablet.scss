@@ -5,6 +5,12 @@
     .contact {
         width: 768px;
 
+        .title {
+           h3 {
+               margin-left: 0;
+           }
+        }
+
         .addres{
             margin: 0 20px;
         }
@@ -16,6 +22,7 @@
 
                 &.short {
                     margin-left: 13px;
+                    width: 48.4%;
                 }
             }
         }

@@ -1,5 +1,5 @@
-@import '../../palete.scss';
-@import '../../fonts.scss';
+@import 'palete.scss';
+@import 'fonts.scss';
 
 .slider {
     width: 100%;
@@ -26,21 +26,21 @@
 
     .prev {
         position: absolute;
-        top: 50%;
-        left: 5%;
+        top: 39.5%;
+        left: 2.2%;
 
         &::before {
-            content: url("/images/slider/prev.png")
+            background-image: url("/images/slider/prev.png")
         }
     }
 
     .next {
         position: absolute;
-        top: 50%;
-        right: 5%;
+        top: 39.5%;
+        right: 1.2%;
 
         &::before {
-            content: url("/images/slider/next.png")
+            background-image: url("/images/slider/next.png")
         }
     }
 
@@ -50,7 +50,8 @@
         text-align: center;
 
         h2 {
-            margin-bottom: 23px;
+            margin-bottom: -9px;
+            padding-left: 46px;
             color: $color-1;
             font-family: $Raleway;
             font-size: 62px;
@@ -60,11 +61,13 @@
 
         h1 {
             margin-bottom: 25px;
+            padding-left: 44px;
             color: $color-1;
             font-family: $Montserrat;
             font-size: 74px;
             font-weight: 700;
             line-height: 88.8px;
+            letter-spacing: -2px;
         }
 
         p {
@@ -89,6 +92,7 @@
             line-height: 44px;
             text-decoration: none;
             text-transform: uppercase;
+            margin-left: 47px;
         }
     }
 }

@@ -4,54 +4,63 @@
 
     .title {
         margin-bottom: 70px;
+
+        h3 {
+            margin-left: 0;
+        }
     }
 
     .content {
+        grid-gap: 20px;
         grid-template-columns: 1fr;
         grid-template-rows: 163px 163px 163px 163px;
-        grid-gap: 20px;
+
+        
 
         .item {
 
-             &:hover {
+            .image {
 
-                .hover {
+                &:hover {
 
-                    .icons {
-                        display: none;
-                    }
+                    .hover {
 
-                    .icons-mobile {
-                        height: 60%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: $color-6;
+                        .icons {
+                            display: none;
+                        }
 
-                        img {
-                            margin-right: 10px;
+                        .icons-mobile {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 60%;
+                            background-color: $color-6-opasity;
 
-                            &:last-child {
-                                margin-right: 0;
+                            img {
+                                margin-right: 10px;
+
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+
+                        .text {
+                            height: 40%;
+                            background-color: $bc-color;
+
+                            h4 {
+                                font-size: 13.99px;
+                                line-height: 26.96px;
+                            }
+
+                            p {
+                                font-size: 9.99px;
+                                line-height: 21.96px;
                             }
                         }
                     }
-
-                    .text {
-                        height: 40%;
-
-                        h4 {
-                            font-size: 13.99px;
-                            line-height: 26.96px;
-                        }
-
-                        p {
-                            font-size: 9.99px;
-                            line-height: 21.96px;
-                        }
-                    }
                 }
-
             }
 
             &.item-1 {
@@ -70,9 +79,17 @@
                 grid-column: 1/2;
             }
 
-            &.item-7, &.item-5, &.item-6 {
+            &.item-5 {
                 display: none;
-            }    
-         }
+            }
+
+            &.item-5 {
+                display: none;
+            }
+
+            &.item-5 {
+                display: none;
+            }
+        }
     }
 }
