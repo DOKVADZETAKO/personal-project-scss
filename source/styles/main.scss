@@ -1,9 +1,5 @@
 @import 'reset';
-
-* {
-    box-sizing: border-box;
-}
-
+@import 'base';
 @import 'media-queries';
 @import 'components/header/index.scss';
 @import 'components/slider/index.scss';

@@ -7,18 +7,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: $bc-color;
+    height: 758px;
 
     .bg-image {
         position: relative;
         width: 100%;
-        height: auto;
+        height: 100%;
         display: flex;
         overflow: hidden;
         justify-content: center;
         align-items: center;
 
-        img{
-         //   position: absolute;
+        img {
+            position: absolute;
         }
     }
 

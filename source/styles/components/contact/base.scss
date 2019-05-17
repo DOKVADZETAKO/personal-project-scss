@@ -4,6 +4,7 @@
 .maincontact {
     width: 100%;
     overflow: hidden;
+    padding-top: 40px;
 
     .contact {
         width: 1188px;
@@ -58,11 +59,13 @@
                 margin-bottom: 50px;
 
                 div {
-                    
+
                     &:before {
                         content: url("/images/contact/Location.png");
-                        
+                        display: block;
+                        margin-bottom: 30px;
                     }
+
                     &.email {
 
                         &:before {
@@ -89,7 +92,7 @@
         }
 
         .mail {
-            margin-bottom: 100px;
+            margin-bottom: 117px;
 
             input {
                 border: 1px solid $br-color;
@@ -128,7 +131,7 @@
             }
         }
 
-        textarea{
+        textarea {
             width: 100%;
             height: 150px;
             border: 1px solid $br-color;

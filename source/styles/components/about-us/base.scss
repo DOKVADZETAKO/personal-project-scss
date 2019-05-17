@@ -1,21 +1,21 @@
-@import '../styles/palete.scss';
-@import '../styles/fonts.scss';
+@import 'palete.scss';
+@import 'fonts.scss';
 
 .mainaboutus {
     width: 100%;
+    margin-top: 115px;
     overflow: hidden;
-    margin-top: 50px;
 }
 
 .about-us {
     width: 1188px;
-    margin-bottom: 50px;
     margin: auto;
+    margin-bottom: 50px;
 
     .title {
         text-align: center;
         position: relative;
-        margin-bottom: 50px;
+        margin-bottom: 109px;
 
         h3 {
             font-family: $Raleway;
@@ -28,7 +28,6 @@
             span {
                 color: $color-2;
             }
-
         }
 
         .speak {
@@ -47,7 +46,7 @@
                 content: url("/images/about-us/Speak Icon.png");
                 position: absolute;
                 top: 21px;
-                background: #FFFFFF;
+                background: $color-1;
                 left: 50%;
                 transform: translate(-50%, 50%);
                 padding: 0 7px;
@@ -59,27 +58,27 @@
     .content {
         display: flex;
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 137px;
 
         .pc {
-             //  position: relative;
+               position: relative;
                 width: 1188px;
                 height: 414px;
                 display: flex;
                 overflow: hidden;
                 justify-content: center;
                 align-items: center;
-                margin-right: 95px;
-        
-                img{
-                 //  position: absolute;
+                margin-right: 165px;
+
+                img {
+                   position: absolute;
                    width: 100%;
 
-                &.patern{
+                &.patern {
                     display: none;
                 }
-                }
             }
+        }
 
         .info {
 
@@ -89,7 +88,7 @@
                 font-size: 31px;
                 line-height: 19px;
                 color: $color-4;
-                margin-bottom: 40px;
+                padding-bottom: 40px;
             }
 
             p {
@@ -154,7 +153,8 @@
                     &.four {
 
                         div {
-                            a{
+
+                            a {
                                 display: none;
                             }
 
